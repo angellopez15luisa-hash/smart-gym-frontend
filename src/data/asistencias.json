@@ -1,0 +1,5 @@
+[
+  { "id": "asi-1", "fecha": "2026-11-17", "hora": "07:45", "socioId": "soc-1", "nombre": "Luis Alberto Quispe", "dni": "71458923", "estado": "activo" },
+  { "id": "asi-2", "fecha": "2026-11-17", "hora": "08:30", "socioId": "soc-3", "nombre": "Jorge \"El Toro\" Ramírez", "dni": "41239876", "estado": "por_vencer" },
+  { "id": "asi-3", "fecha": "2026-11-17", "hora": "09:15", "socioId": "soc-2", "nombre": "María Fernanda Rojas", "dni": "45891234", "estado": "activo" }
+]

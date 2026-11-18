@@ -1,0 +1,7 @@
+[
+  { "id": "plan-1", "nombre": "Pase Diario", "dias": 1, "precio": 8.00, "desc": "Entrenamiento libre por 1 día" },
+  { "id": "plan-2", "nombre": "Plan Semanal", "dias": 7, "precio": 25.00, "desc": "Acceso completo durante 7 días" },
+  { "id": "plan-3", "nombre": "Mensualidad Clásica", "dias": 30, "precio": 80.00, "desc": "Acceso ilimitado a pesas y cardio" },
+  { "id": "plan-4", "nombre": "Promo Dúo 2x1 (Mes)", "dias": 30, "precio": 130.00, "desc": "Inscripción promocional para 2 amigos" },
+  { "id": "plan-5", "nombre": "Trimestral Ahorro", "dias": 90, "precio": 210.00, "desc": "3 meses continuos con descuento especial" }
+]

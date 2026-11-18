@@ -1,0 +1,6 @@
+[
+  { "id": "mov-1", "fecha": "2026-11-17", "hora": "08:15", "tipo": "ingreso", "concepto": "Mensualidad Clásica - Luis Alberto Quispe", "categoria": "Membresía", "metodo": "Yape / Plin", "monto": 80.00 },
+  { "id": "mov-2", "fecha": "2026-11-17", "hora": "09:30", "tipo": "ingreso", "concepto": "Trimestral Ahorro - María Fernanda Rojas", "categoria": "Membresía", "metodo": "Efectivo", "monto": 210.00 },
+  { "id": "mov-3", "fecha": "2026-11-17", "hora": "10:05", "tipo": "ingreso", "concepto": "Venta: Scoop Proteína Whey", "categoria": "Barra / Tienda", "metodo": "Efectivo", "monto": 7.00 },
+  { "id": "mov-4", "fecha": "2026-11-17", "hora": "10:20", "tipo": "egreso", "concepto": "Compra bidón de agua y desinfectante", "categoria": "Gasto Operativo", "metodo": "Efectivo", "monto": 22.00 }
+]

@@ -1,0 +1,8 @@
+[
+  { "id": "soc-1", "nombre": "Luis Alberto Quispe", "dni": "71458923", "telefono": "987654321", "planId": "plan-3", "inicio": "2026-11-02", "fin": "2026-12-02" },
+  { "id": "soc-2", "nombre": "María Fernanda Rojas", "dni": "45891234", "telefono": "912345678", "planId": "plan-5", "inicio": "2026-10-18", "fin": "2027-01-16" },
+  { "id": "soc-3", "nombre": "Jorge \"El Toro\" Ramírez", "dni": "41239876", "telefono": "998877665", "planId": "plan-3", "inicio": "2026-10-21", "fin": "2026-11-20" },
+  { "id": "soc-4", "nombre": "Valeria Paredes", "dni": "74859612", "telefono": "945612378", "planId": "plan-3", "inicio": "2026-10-19", "fin": "2026-11-18" },
+  { "id": "soc-5", "nombre": "Diego Armando Castro", "dni": "70123456", "telefono": "963852741", "planId": "plan-3", "inicio": "2026-10-14", "fin": "2026-11-13" },
+  { "id": "soc-6", "nombre": "Camila Huamán", "dni": "76543210", "telefono": "951753852", "planId": "plan-2", "inicio": "2026-11-09", "fin": "2026-11-16" }
+]

@@ -1,0 +1,8 @@
+[
+  { "id": "prod-1", "nombre": "Agua Mineral 650ml", "precio": 2.50, "stock": 36, "categoria": "Bebida" },
+  { "id": "prod-2", "nombre": "Bebida Rehidratante", "precio": 4.50, "stock": 18, "categoria": "Bebida" },
+  { "id": "prod-3", "nombre": "Scoop Proteína Whey", "precio": 7.00, "stock": 25, "categoria": "Suplemento" },
+  { "id": "prod-4", "nombre": "Pre-Entreno (Shot)", "precio": 6.00, "stock": 15, "categoria": "Suplemento" },
+  { "id": "prod-5", "nombre": "Guantes de Entrenamiento", "precio": 25.00, "stock": 8, "categoria": "Accesorio" },
+  { "id": "prod-6", "nombre": "Toalla de Mano Gym", "precio": 12.00, "stock": 12, "categoria": "Accesorio" }
+]
