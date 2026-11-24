@@ -1,13 +1,36 @@
-import './assets/main.css'
-
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
+import './assets/main.css'
+import '@fortawesome/fontawesome-free/css/all.min.css'
 
+import { VueQueryPlugin, QueryClient } from '@tanstack/vue-query'
+import { VueQueryDevtools } from '@tanstack/vue-query-devtools'
+
+import Vue3Toastify, { type ToastContainerOptions } from 'vue3-toastify'
+import 'vue3-toastify/dist/index.css'
 
 import App from './App.vue'
 import router from './router'
 
 const app = createApp(App)
+
+// Crea una instancia del cliente de Vue Query
+const queryClient = new QueryClient()
+
+// Instala el plugin en Vue
+app.use(VueQueryPlugin, { queryClient })
+
+// Registra el componente Devtools para inspeccionar peticiones
+app.component('VueQueryDevtools', VueQueryDevtools)
+
+app.use(Vue3Toastify, {
+  autoClose: 4000,
+  theme: 'colored',
+  pauseOnHover: false,
+  pauseOnFocusLoss: false,
+
+  // ...
+} as ToastContainerOptions)
 
 app.use(createPinia())
 app.use(router)

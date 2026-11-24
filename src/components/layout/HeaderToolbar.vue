@@ -1,26 +1,45 @@
 <script setup lang="ts">
 import { useRoute, useRouter } from 'vue-router'
 import { useGymStore } from '@/stores/useGymStore'
+import Swal from "sweetalert2"
+import { useAuthStore } from "@/stores/auth.store"
 
 const route = useRoute()
 const router = useRouter()
 const store = useGymStore()
 
+const authStore = useAuthStore()
+
 function handleCajaAction() {
   if (store.cajaEstado.abierta) {
     store.abrirCorteCajaGlobal()
-    if (route.path !== '/caja') {
-      router.push('/caja')
+    if (route.path !== '/admin/caja') {
+      router.push('/admin/caja')
     }
   } else {
-    router.push('/caja')
+    router.push('/admin/caja')
   }
 }
 
+// Función de Cierre de Sesión
 function handleLogout() {
-  store.logout()
-  router.push('/auth/login') // 👈 Redirección exacta al layout independiente
+  Swal.fire({
+    title: '¿Cerrar sesión?',
+    text: 'Se bloqueará la terminal de venta actual.',
+    icon: 'question',
+    showCancelButton: true,
+    confirmButtonColor: '#ef4444',
+    cancelButtonColor: '#64748b',
+    confirmButtonText: 'Sí, cerrar sesión',
+    cancelButtonText: 'Cancelar',
+  }).then((result) => {
+    if (result.isConfirmed) {
+      authStore.logout()
+      router.replace({ name: 'login' })
+    }
+  })
 }
+
 </script>
 
 <template>
@@ -98,6 +117,3 @@ function handleLogout() {
     </div>
   </div>
 </template>
-```[cite: 16]
-
-Con este ajuste, la cabecera queda impecable, con su botón de salida perfectamente legible y listo para devolverte a la pantalla de autenticación independiente cuando lo necesites[cite: 16]. ¡Pruébalo!
